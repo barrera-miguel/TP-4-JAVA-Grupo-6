@@ -20,7 +20,7 @@ public class Main {
                             case 1:
                                 System.out.println("-------------------------------------");
                                 System.out.println("Ejercicio 1:");
-
+                                Ejercicio1.main(args);
                                 break;
                             case 2:
                                 System.out.println("-------------------------------------");
