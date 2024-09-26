@@ -25,9 +25,8 @@ public class Main {
                             case 2:
                                 System.out.println("-------------------------------------");
                                 System.out.println("Ejercicio 2:");
-
+                                Ejercicio2.main(args);
                                 break;
-
                             case 3:
                                 System.out.println("-------------------------------------");
                                 System.out.println("Ejercicio 3:");
