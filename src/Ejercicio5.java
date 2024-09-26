@@ -4,7 +4,6 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean key = false;
-        int contador = 0;
         String suma = "0";
         String[][] mercado = {
                 {"KitKat","32","10"},
@@ -38,17 +37,18 @@ public class Ejercicio5 {
                         System.out.println("-----------------------------");
                         break;
                     case 2:
-                        System.out.println("Seleccione la posisción de la golosina que sedea:");
+                        System.out.println("Seleccione la posición de la golosina que desea:");
                         pos = sc.nextInt();
                         if (pos>=0 && pos<=11){
                             suma = FuncionesEjercicio5.apagado(mercado,pos,suma);
                             mercado[pos][2]= FuncionesEjercicio5.RestarStock(mercado,pos);
+                            System.out.println("Compró: "+ mercado[pos][0]);
                         }else {
                             System.out.println("Error - Número fuera de rango");
                         }
                         break;
                     case 3:
-                        System.out.println("Ingrese la contraseña para apagar la maquina:");
+                        System.out.println("Ingrese la contraseña para apagar la máquina:");
                         String contraseña = sc.next();
                         if (contraseña.equals("AdminXYZ")){
                             System.out.println("Seleccione el producto que desea cargar stock:");
@@ -60,11 +60,11 @@ public class Ejercicio5 {
                         }
                         break;
                     case 4:
-                        System.out.println("Ingrese la contraseña para apagar la maquina:");
+                        System.out.println("Ingrese la contraseña para apagar la máquina:");
                         contraseña = sc.next();
                         if (contraseña.equals("AdminXYZ")){
                             System.out.println("El dinero total recaudado es de: $"+suma);
-                            System.out.println("-----Maquina apagada-----");
+                            System.out.println("-----Máquina apagada-----");
 
                             key = true;
                         }else {
@@ -77,4 +77,3 @@ public class Ejercicio5 {
         }while(key == false);
     }
 }
-

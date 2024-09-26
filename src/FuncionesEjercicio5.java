@@ -44,7 +44,5 @@ public class FuncionesEjercicio5 {
             String total = Integer.toString(precio);
             return total;
         }
-
-
     }
 }
