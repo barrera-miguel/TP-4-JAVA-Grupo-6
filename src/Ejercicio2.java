@@ -59,7 +59,7 @@ public class Ejercicio2 {
         System.out.println("RESULTADO SEGUNDO ARRAY");
         for (i = 0; i < y; i++) {
             for (j = 0; j < x; j++) {
-                System.out.println(primer_array[i][j] + " ");
+                System.out.println(segundo_array[i][j] + " ");
             }
         }
 
