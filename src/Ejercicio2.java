@@ -4,7 +4,6 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         int i;
         int j;
-        int k;
         Scanner sc = new Scanner(System.in);
 
         //Pedimos por pantalla la dimension del primer array para filas y coumnas
@@ -41,10 +40,7 @@ public class Ejercicio2 {
         int[][] resultado = new int[x][y];
         for (i = 0; i < x; i++) {
             for (j = 0; j < y; j++) {
-                resultado[i][j] = 0;
-                for (k = 0; k < y; k++) {
-                    resultado[i][j] += primer_array[i][k] * segundo_array[i][k];
-                }
+                resultado[i][j] = primer_array[i][j] * segundo_array[j][i];
             }
         }
 
@@ -52,23 +48,26 @@ public class Ejercicio2 {
         System.out.println("RESULTADO PRIMER ARRAY");
         for (i = 0; i < x; i++) {
             for (j = 0; j < y; j++) {
-                System.out.println(primer_array[i][j] + " ");
+                System.out.print(primer_array[i][j] + "\t");
             }
+            System.out.println();
         }
         //Mostramos por pantalla el segundo array
         System.out.println("RESULTADO SEGUNDO ARRAY");
         for (i = 0; i < y; i++) {
             for (j = 0; j < x; j++) {
-                System.out.println(segundo_array[i][j] + " ");
+                System.out.print(segundo_array[i][j] + "\t");
             }
+            System.out.println();
         }
 
         //Mostramos por pantalla el resultado de la multiplicacion
         System.out.println("RESULTADO DE LA MULTIPLICACION");
         for (i = 0; i < x; i++) {
             for (j = 0; j < y; j++) {
-                System.out.println(resultado[i][j] + " ");
+                System.out.print(resultado[i][j] + "\t");
             }
+            System.out.println();
         }
     }
 }
