@@ -46,4 +46,3 @@ public class Ejercicio3 {
         System.out.println("Suma total de todas las columnas: " + sumaTotal);
     }
 }
-
