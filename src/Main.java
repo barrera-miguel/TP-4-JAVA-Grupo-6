@@ -40,7 +40,7 @@ public class Main {
                             case 5:
                                 System.out.println("-------------------------------------");
                                 System.out.println("Ejercicio 5:");
-
+                                Ejercicio5.main(args);
                                 break;
                             case 6:
                                 System.out.println("-------------------------------------");
