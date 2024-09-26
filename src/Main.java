@@ -35,7 +35,7 @@ public class Main {
                             case 4:
                                 System.out.println("-------------------------------------");
                                 System.out.println("Ejercicio 4:");
-
+                                Ejercicio4.main(args);
                                 break;
                             case 5:
                                 System.out.println("-------------------------------------");
